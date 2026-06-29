@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Earthy Forest Green (Pine, Moss, Herbs) */
+  --color-emerald-50: #f3f7f5;
+  --color-emerald-100: #e3ede7;
+  --color-emerald-200: #c9dacd;
+  --color-emerald-300: #a3beac;
+  --color-emerald-400: #779c83;
+  --color-emerald-500: #547c61;
+  --color-emerald-600: #3d5e4a;
+  --color-emerald-700: #2f493a;
+  --color-emerald-800: #1c3527;
+  --color-emerald-900: #122119;
+  --color-emerald-950: #08100c;
+
+  /* Warm Wild Spices & Hillside Honey (Terracotta, Glowing Embers) */
+  --color-amber-50: #fffbf2;
+  --color-amber-100: #fef2d3;
+  --color-amber-200: #fbe0a3;
+  --color-amber-300: #f6c46a;
+  --color-amber-400: #efab3d;
+  --color-amber-500: #dd7e0c;
+  --color-amber-600: #b95c07;
+  --color-amber-700: #904106;
+  --color-amber-800: #723108;
+  --color-amber-900: #5a2307;
+
+  /* Cozy Ceramic Clay & Espresso Wood (Warm slate & charcoal) */
+  --color-stone-50: #fdfcfb;
+  --color-stone-100: #f7f4f0;
+  --color-stone-200: #eae4db;
+  --color-stone-300: #d7ccbf;
+  --color-stone-400: #c1b2a1;
+  --color-stone-500: #9f8d7c;
+  --color-stone-600: #7d6e5f;
+  --color-stone-700: #5f5247;
+  --color-stone-800: #423831;
+  --color-stone-900: #26201c;
+}

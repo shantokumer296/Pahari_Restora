@@ -1,0 +1,152 @@
+{
+  "entities": {
+    "Profile": {
+      "title": "Profile",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "mobile": { "type": "string" },
+        "emailVerified": { "type": "boolean" },
+        "isBanned": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "mobile", "emailVerified", "isBanned", "createdAt"]
+    },
+    "FoodItem": {
+      "title": "FoodItem",
+      "description": "Restaurant menu food item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "number" },
+        "category": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "isAvailable": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "description", "price", "category", "imageUrl", "isAvailable", "createdAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Food delivery order",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userMobile": { "type": "string" },
+        "items": { "type": "array" },
+        "totalAmount": { "type": "number" },
+        "deliveryAddress": { "type": "string" },
+        "status": { "type": "string" },
+        "adminResponse": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userName", "userEmail", "userMobile", "items", "totalAmount", "deliveryAddress", "status", "createdAt"]
+    },
+    "ContactMessage": {
+      "title": "ContactMessage",
+      "description": "Contact form submission message",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "mobile": { "type": "string" },
+        "message": { "type": "string" },
+        "adminResponse": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "message", "createdAt"]
+    },
+    "Otp": {
+      "title": "Otp",
+      "description": "One-time passcode for login verification",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "otp": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["email", "otp", "createdAt"]
+    },
+    "Session": {
+      "title": "Session",
+      "description": "User session token mapping",
+      "type": "object",
+      "properties": {
+        "token": { "type": "string" },
+        "userId": { "type": "string" }
+      },
+      "required": ["token", "userId"]
+    },
+    "AdminSession": {
+      "title": "AdminSession",
+      "description": "Admin logged-in session token",
+      "type": "object",
+      "properties": {
+        "token": { "type": "string" },
+        "isLoggedIn": { "type": "boolean" }
+      },
+      "required": ["token", "isLoggedIn"]
+    },
+    "Coupon": {
+      "title": "Coupon",
+      "description": "Discount coupon for orders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "discountType": { "type": "string", "enum": ["flat", "percentage"] },
+        "discountValue": { "type": "number" },
+        "expiryDate": { "type": "string" },
+        "minOrderAmount": { "type": "number" },
+        "usageLimit": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "usageCount": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "code", "discountType", "discountValue", "expiryDate", "minOrderAmount", "usageLimit", "isActive", "usageCount", "createdAt"]
+    }
+  },
+  "firestore": {
+    "coupons/{couponId}": {
+      "schema": "Coupon",
+      "description": "Collection of store discount coupons"
+    },
+    "profiles/{profileId}": {
+      "schema": "Profile",
+      "description": "Collection of user profiles"
+    },
+    "food_items/{itemId}": {
+      "schema": "FoodItem",
+      "description": "Collection of restaurant food items"
+    },
+    "orders/{orderId}": {
+      "schema": "Order",
+      "description": "Collection of customer orders"
+    },
+    "contact_messages/{messageId}": {
+      "schema": "ContactMessage",
+      "description": "Collection of contact messages"
+    },
+    "otps/{email}": {
+      "schema": "Otp",
+      "description": "Collection of temporary OTPS"
+    },
+    "sessions/{token}": {
+      "schema": "Session",
+      "description": "Collection of user sessions"
+    },
+    "admin_sessions/{token}": {
+      "schema": "AdminSession",
+      "description": "Collection of administrator sessions"
+    }
+  }
+}

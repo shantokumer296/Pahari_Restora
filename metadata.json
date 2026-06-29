@@ -1,0 +1,6 @@
+{
+  "name": "Pahari Restora",
+  "description": "Premium Bangladeshi and indigenous food ordering platform with customer and admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

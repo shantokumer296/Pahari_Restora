@@ -1,0 +1,102 @@
+{
+  "profiles": [],
+  "food_items": [
+    {
+      "id": "seed-1",
+      "name": "Chicken Kacchi Biryani",
+      "description": "Aromatic basmati rice slow-cooked with tender marinated chicken, potato, and direct hillside spices.",
+      "price": 240,
+      "category": "Rice & Curry",
+      "imageUrl": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-2",
+      "name": "Spicy Beef Bhuna",
+      "description": "Tender chunks of beef dry-cooked with thick caramelized onions, ginger, garlic, and special Pahari hot peppers.",
+      "price": 290,
+      "category": "Main Course",
+      "imageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-3",
+      "name": "Smoky Chicken Grilled Platter",
+      "description": "Full quarter chicken marinated in local herbs, charred to charcoal perfection, served with house salad and mint sauce.",
+      "price": 320,
+      "category": "Grilled",
+      "imageUrl": "https://images.unsplash.com/photo-1598515214211-89d3e73ae83b?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-4",
+      "name": "Traditional Pahari Bamboo Chicken",
+      "description": "Exquisite tribal delicacy - chicken pieces stuffed in raw bamboo shoots with hill herbs and slow-cooked over firewood.",
+      "price": 380,
+      "category": "Bangladeshi Specials",
+      "imageUrl": "https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-5",
+      "name": "Pahari Ruhi Fish Fry",
+      "description": "Fresh river Ruhi fish coated in crispy turmeric-chili crust, shallow fried with mustard oil and green chilies.",
+      "price": 220,
+      "category": "Bangladeshi Specials",
+      "imageUrl": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-6",
+      "name": "Butter Paratha with Egg Bhurji",
+      "description": "Multi-layered crispy paratha pan-fried in pure ghee, served with double egg scrambled with spices.",
+      "price": 90,
+      "category": "Snacks",
+      "imageUrl": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-7",
+      "name": "Chilled Sweet Mango Lassi",
+      "description": "Thick creamy yogurt blended with sweet ripe mangoes and saffron essence.",
+      "price": 80,
+      "category": "Drinks",
+      "imageUrl": "https://images.unsplash.com/photo-1571115177098-24ec4209e548?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    },
+    {
+      "id": "seed-8",
+      "name": "Hill Country Lemon Sherbet",
+      "description": "Freshly squeezed hill lime juice served with mint, black salt, and absolute cold splash.",
+      "price": 50,
+      "category": "Drinks",
+      "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=600",
+      "isAvailable": true,
+      "createdAt": "2026-06-28T12:19:08.467Z"
+    }
+  ],
+  "orders": [],
+  "contact_messages": [],
+  "otps": {
+    "john1782649246727@example.com": {
+      "email": "john1782649246727@example.com",
+      "code": "626974",
+      "expires": 1782649846944,
+      "profileData": {
+        "name": "John Doe",
+        "email": "john1782649246727@example.com",
+        "mobile": "01712345678",
+        "password": "password123"
+      }
+    }
+  },
+  "sessions": {},
+  "admin_sessions": {}
+}
